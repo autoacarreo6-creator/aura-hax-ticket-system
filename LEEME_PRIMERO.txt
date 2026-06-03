@@ -1,0 +1,252 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║          🎫 AURA HAX TICKET BOT - BOT DE DISCORD 🎫          ║
+║                                                              ║
+║           Sistema de Tickets para FF - Complex               ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+✅ TU BOT ESTÁ LISTO PARA USAR
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 ¿QUÉ SE INCLUYE?
+
+✅ Sistema de tickets completo con embeds profesionales
+✅ 5 planes de FF - Complex (1d, 7d, 15d, 30d, 365d)
+✅ Precios: $2, $10, $16, $24, $65 USD
+✅ 3 métodos de pago: Binance, Nequi, PayPal
+✅ Integración con KeyAuth (generación automática de licencias)
+✅ Sistema de aprobación manual por el owner
+✅ Listo para Railway (hosting gratis 30 días)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 EMPEZAR EN 3 PASOS
+
+1️⃣ Lee: SETUP_RAPIDO.md
+   → Setup completo en 10 minutos
+
+2️⃣ Lee: MI_BOT_INFO.md
+   → Cómo obtener tu token y IDs
+
+3️⃣ Ejecuta:
+   npm install
+   npm start
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTACIÓN COMPLETA
+
+┌─────────────────────────────────────────────────────────────┐
+│  ARCHIVO                    │  DESCRIPCIÓN                   │
+├─────────────────────────────────────────────────────────────┤
+│  ⭐ SETUP_RAPIDO.md         │  Setup en 10 minutos          │
+│  📖 README.md               │  Documentación completa        │
+│  🔐 MI_BOT_INFO.md          │  Info del Developer Portal    │
+│  🔑 KEYAUTH_SETUP.md        │  Configurar KeyAuth           │
+│  ☁️  GUIA_RAILWAY.md         │  Hosting en Railway           │
+│  👀 PREVIEW.md              │  Vista previa de embeds       │
+│  📚 INDEX.md                │  Índice de documentación      │
+└─────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ ARCHIVOS DEL CÓDIGO
+
+index.js                    → Archivo principal del bot
+config.js                   → Configuración (precios, colores)
+.env                        → TU configuración personal
+.env.example                → Plantilla de configuración
+
+commands/
+  └── setup.js              → Comando !setup
+
+handlers/
+  ├── buttonHandler.js      → Lógica de botones
+  ├── selectHandler.js      → Lógica de selects
+  ├── modalHandler.js       → Lógica de modales
+  └── ownerHandler.js       → Comandos del owner
+
+utils/
+  └── keyauth.js            → Integración con KeyAuth
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 CARACTERÍSTICAS
+
+✅ Panel de tickets con botón
+✅ Menús desplegables para seleccionar:
+   - Plan (1 día, 7 días, etc.)
+   - Cantidad de licencias (1-5)
+   - Método de pago
+✅ Sistema de aprobación manual por el owner
+✅ Notificaciones al owner por DM
+✅ Generación automática de licencias con KeyAuth
+✅ Fallback a licencias temporales si KeyAuth no está
+✅ Cierre automático de tickets
+✅ Diseño profesional con embeds verde neón
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📦 PRODUCTO: FF - COMPLEX
+
+┌────────────────────────────────────────┐
+│  PLAN          │  PRECIO  │  DURACIÓN  │
+├────────────────────────────────────────┤
+│  1 día         │  $2 USD  │  1 día     │
+│  1 semana      │  $10 USD │  7 días    │
+│  15 días       │  $16 USD │  15 días   │
+│  1 mes         │  $24 USD │  30 días   │
+│  1 año         │  $65 USD │  365 días  │
+└────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💳 MÉTODOS DE PAGO
+
+🟡 Binance - USDT (BEP20)
+💜 Nequi - Pesos Colombianos (COP)
+💳 PayPal - Con comisión incluida
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 PERSONALIZACIÓN
+
+Todo es personalizable en config.js:
+
+✏️ Precios
+✏️ Planes (días)
+✏️ Métodos de pago
+✏️ Colores
+✏️ Nombre del bot
+✏️ Copyright
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 KEYAUTH (OPCIONAL)
+
+El bot ya tiene integración con KeyAuth para generar licencias
+automáticamente.
+
+Si NO configuras KeyAuth:
+→ El bot generará licencias temporales (XXXX-XXXX-XXXX-XXXX)
+
+Si configuras KeyAuth:
+→ El bot generará licencias reales con expiración
+
+Lee: KEYAUTH_SETUP.md para más info
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+☁️ HOSTING EN RAILWAY (GRATIS 30 DÍAS)
+
+Railway te da $5 USD gratis → suficiente para ~30 días
+
+Pasos:
+1. Sube el proyecto a GitHub (sin .env)
+2. Conecta Railway con GitHub
+3. Deploy automático
+4. Agrega las variables de entorno
+5. ¡Listo! Bot online 24/7
+
+Lee: GUIA_RAILWAY.md para guía completa paso a paso
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎮 USO DEL BOT
+
+Cliente:
+1. Clic en "🎫 Crear Ticket"
+2. Selecciona plan
+3. Selecciona cantidad
+4. Selecciona método de pago
+5. Realiza pago
+6. Clic en "Ya realicé el pago"
+7. Espera aprobación
+8. Recibe licencia
+
+Owner (tú):
+1. Recibes notificación en el canal
+2. Verificas el pago
+3. Clic en "Pago verificado"
+4. La licencia se genera y envía automáticamente
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 SOLUCIÓN DE PROBLEMAS
+
+Problema: Bot no inicia
+→ Verifica .env y que el token sea correcto
+
+Problema: Bot no responde
+→ Activa los intents en Discord Developer Portal
+
+Problema: KeyAuth no funciona
+→ Verifica las credenciales en .env
+
+Problema: No puedo crear tickets
+→ Verifica permisos del bot (Administrador)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ CHECKLIST DE SETUP
+
+[ ] Node.js instalado
+[ ] Bot creado en Discord Developer Portal
+[ ] Token copiado
+[ ] Intents activados (PRESENCE, SERVER MEMBERS, MESSAGE CONTENT)
+[ ] Bot invitado al servidor con permisos
+[ ] Archivo .env creado con tus datos
+[ ] npm install ejecutado
+[ ] npm start ejecutado
+[ ] Bot online en Discord
+[ ] !setup ejecutado en un canal
+[ ] Panel de tickets creado
+[ ] Ticket de prueba funcionando
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 RECURSOS
+
+Discord Developer Portal:
+https://discord.com/developers/applications
+
+KeyAuth Dashboard:
+https://keyauth.cc
+
+Railway Hosting:
+https://railway.app
+
+Discord.js Documentación:
+https://discord.js.org
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TIPS
+
+🔥 Mantén tu .env PRIVADO (nunca lo subas a GitHub)
+🔥 Guarda backups de tu configuración
+🔥 Monitorea los logs del bot para ver errores
+🔥 Prueba el bot antes de compartir con clientes
+🔥 Configura KeyAuth para licencias profesionales
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 ¡TODO LISTO!
+
+Tu bot de Discord para venta de licencias está completo y listo
+para usar.
+
+SIGUIENTE PASO:
+→ Lee SETUP_RAPIDO.md y sigue los pasos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Creado con 💚 para Aura Hax
+
+Versión 1.0.0
+Última actualización: Junio 2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

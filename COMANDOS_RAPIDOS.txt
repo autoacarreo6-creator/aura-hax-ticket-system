@@ -1,0 +1,242 @@
+# ⚡ COMANDOS RÁPIDOS - COPIAR Y PEGAR
+
+Este archivo contiene todos los comandos que necesitarás.
+Simplemente copia y pega en tu terminal.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 📦 INSTALACIÓN INICIAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 1. Instalar dependencias
+npm install
+
+# 2. Crear archivo .env (copia de .env.example)
+copy .env.example .env
+
+# 3. Editar .env con tu editor favorito
+notepad .env
+
+# 4. Iniciar el bot
+npm start
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🔄 USO DIARIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Iniciar el bot
+npm start
+
+# Detener el bot
+Ctrl + C
+
+# Ver archivos del proyecto
+dir
+
+# Editar configuración
+notepad config.js
+
+# Editar variables de entorno
+notepad .env
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🐙 GIT (SUBIR A GITHUB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Inicializar Git
+git init
+
+# Agregar todos los archivos
+git add .
+
+# Hacer commit
+git commit -m "Bot Aura Hax Ticket v1.0"
+
+# Conectar con tu repositorio de GitHub
+git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+
+# Subir a GitHub
+git push -u origin main
+
+⚠️ IMPORTANTE: El .gitignore ya está configurado para NO subir
+   tu archivo .env (que contiene información sensible)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## ☁️ RAILWAY (HOSTING)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Instalar Railway CLI (opcional)
+npm install -g @railway/cli
+
+# Login en Railway
+railway login
+
+# Inicializar proyecto
+railway init
+
+# Subir proyecto
+railway up
+
+# Ver logs
+railway logs
+
+# Agregar variable de entorno
+railway variables set DISCORD_TOKEN=tu_token
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎮 COMANDOS EN DISCORD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Crear panel de tickets (solo owner)
+!setup
+
+# Ver solicitudes pendientes (DM al bot como owner)
+!pending
+
+# Ver ayuda (DM al bot como owner)
+!help
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 📝 EDITAR ARCHIVOS IMPORTANTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Cambiar precios y planes
+notepad config.js
+
+# Cambiar variables de entorno
+notepad .env
+
+# Editar lógica de pago
+notepad handlers/selectHandler.js
+
+# Editar botones
+notepad handlers/buttonHandler.js
+
+# Configurar KeyAuth
+notepad utils/keyauth.js
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🔍 VERIFICAR INSTALACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Ver versión de Node.js
+node --version
+
+# Ver versión de npm
+npm --version
+
+# Ver dependencias instaladas
+npm list
+
+# Verificar que .env existe
+dir .env
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🆘 SOLUCIÓN DE PROBLEMAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Reinstalar dependencias
+rmdir /s /q node_modules
+npm install
+
+# Limpiar cache de npm
+npm cache clean --force
+npm install
+
+# Ver errores detallados
+npm start --verbose
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 📊 ESTRUCTURA DEL PROYECTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ver estructura de carpetas:
+tree /F
+
+Ver solo carpetas:
+tree /A
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🔐 VARIABLES DE ENTORNO (.env)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Copia esto en tu archivo .env y completa con tu información:
+
+DISCORD_TOKEN=
+OWNER_ID=
+GUILD_ID=
+
+KEYAUTH_NAME=
+KEYAUTH_OWNERID=
+KEYAUTH_SECRET=
+
+BINANCE_ADDRESS=
+NEQUI_NUMBER=
+NEQUI_NAME=
+PAYPAL_EMAIL=
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎨 PERSONALIZACIÓN RÁPIDA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Cambiar color del bot (en config.js):
+colors: {
+  primary: '#00ff00',  // Verde neón actual
+  // Otros colores populares:
+  // '#ff0000' - Rojo
+  // '#0000ff' - Azul
+  // '#ff00ff' - Magenta
+  // '#00ffff' - Cyan
+}
+
+Cambiar nombre del bot (en config.js):
+botName: 'Aura Hax Ticket',
+
+Cambiar copyright (en config.js):
+copyright: 'Aura Hax - Copyright',
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 📚 ABRIR DOCUMENTACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Abrir todos los archivos importantes
+notepad LEEME_PRIMERO.txt
+notepad SETUP_RAPIDO.md
+notepad README.md
+notepad KEYAUTH_SETUP.md
+notepad GUIA_RAILWAY.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## ✅ CHECKLIST DE SETUP (COPIAR)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ ] npm install
+[ ] Crear .env
+[ ] Obtener DISCORD_TOKEN
+[ ] Obtener OWNER_ID
+[ ] Obtener GUILD_ID
+[ ] Configurar intents en Developer Portal
+[ ] Invitar bot al servidor
+[ ] npm start
+[ ] !setup en Discord
+[ ] Probar crear ticket
+[ ] (Opcional) Configurar KeyAuth
+[ ] (Opcional) Subir a Railway
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🚀 INICIO RÁPIDO (TODO EN 1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Copia estos comandos uno por uno:
+
+npm install
+copy .env.example .env
+notepad .env
+npm start
+
+Luego en Discord escribe: !setup
+
+¡Listo! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIN - ¡Disfruta tu bot! 🎮
