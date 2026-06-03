@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aura-hax-tickets
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        value: MTUxMTgyMTQ2NjIwNTgxNDg3NQ.GNycGP.O4z5-i_MsBj6JJFeUAIjGYlgtikquTd-49RiXM
+      - key: OWNER_ID
+        value: 1316235342268862536
+      - key: GUILD_ID
+        value: 1440466602675142820
