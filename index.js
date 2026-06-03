@@ -29,30 +29,29 @@ client.pendingApprovals = new Collection();
 
 client.once('ready', () => {
   console.log(`✅ Bot conectado como ${client.user.tag}`);
-  console.log(`👑 Owner ID: ${process.env.OWNER_ID}`);
-  console.log(`🎫 Sistema de tickets activo - ${config_bot.botName}`);
-  console.log(`🔑 Modo: Keys manuales (owner ingresa las keys)`);
+  console.log(`👑 Owner: ${process.env.OWNER_ID}`);
+  console.log(`🎫 ${config_bot.botName} - Listo`);
   
-  client.user.setActivity('🎫 Aura Hax Tickets', { type: 3 });
+  client.user.setActivity('🎫 Aura Hax', { type: 3 });
 });
 
-// Manejo de mensajes (comandos básicos)
+// Manejo de mensajes
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
 
-  // Comando para crear el panel de tickets (solo owner)
+  // Comando !setup (solo owner)
   if (message.content === '!setup' && message.author.id === process.env.OWNER_ID) {
     await setupTicketPanel(message);
     return;
   }
 
-  // Manejo de DMs del owner para aprobar keys
+  // DM al owner
   if (message.channel.type === 1 && message.author.id === process.env.OWNER_ID) {
     await handleOwnerDM(client, message);
   }
 });
 
-// Manejo de interacciones (botones, modales y selects)
+// Manejo de interacciones
 client.on('interactionCreate', async (interaction) => {
   try {
     if (interaction.isButton()) {
@@ -63,19 +62,18 @@ client.on('interactionCreate', async (interaction) => {
       await handleModal(client, interaction);
     }
   } catch (error) {
-    console.error('Error en interacción:', error);
+    console.error('Error:', error);
     if (!interaction.replied && !interaction.deferred) {
       await interaction.reply({ 
-        content: '❌ Ocurrió un error al procesar tu solicitud.', 
+        content: '❌ Error', 
         ephemeral: true 
       });
     }
   }
 });
 
-// Manejo de errores
 process.on('unhandledRejection', error => {
-  console.error('Error no manejado:', error);
+  console.error('Error:', error);
 });
 
 client.login(process.env.DISCORD_TOKEN);
